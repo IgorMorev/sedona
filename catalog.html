@@ -38,6 +38,114 @@
         </ul>
       </nav>
     </header>
+    <main class="catalog-main">
+      <header class="catalog-header">
+        <h1 class="catalog-main-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link navigation-link-active">Гостиницы</a>
+          </li>
+        </ul>
+      </header>
+      <section class="catalog-filter">
+        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+        <form action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label>
+                  <input type="checkbox" name="pool" checked />
+                  Бассейн
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label>
+                  <input type="checkbox" name="parking" checked />
+                  Парковка
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label>
+                  <input type="checkbox" name="wi-fi" />
+                  Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label>
+                  <input
+                    type="radio"
+                    name="type-of-housing"
+                    value="hotel"
+                    checked
+                  />
+                  Гостиница
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label>
+                  <input type="radio" name="type-of-housing" value="motel" />
+                  Мотель
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label>
+                  <input
+                    type="radio"
+                    name="type-of-housing"
+                    value="apartments"
+                  />
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость, ₽:</legend>
+            <label class="catalog-filter-label">
+              <input
+                class="price-input"
+                max="9000"
+                type="number"
+                name="min-price"
+                placeholder="0"
+                min="0"
+                step="500"
+              />
+              <span>от</span>
+            </label>
+            <label class="catalog-filter-label">
+              <input
+                class="price-input"
+                max="9000"
+                type="number"
+                name="max-price"
+                placeholder="9000"
+                min="0"
+                step="500"
+              />
+              <span>до</span>
+            </label>
+            <button class="range-toggle toggle-min" type="button">
+              <span class="visually-hidden">Изменить минимальную цену.</span>
+            </button>
+            <button class="range-toggle toggle-max" type="button">
+              <span class="visually-hidden">Изменить максимальную цену.</span>
+            </button>
+          </fieldset>
+          <input type="submit" value="Применить" />
+          <input type="reset" value="Сбросить" />
+        </form>
+      </section>
+    </main>
     <footer class="page-footer">
       <section class="subscription">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
